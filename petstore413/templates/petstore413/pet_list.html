@@ -7,4 +7,5 @@
                 <li><a href="{% url 'pet_detail' pet.pk %}" class="list-group-item list-group-item-action">{{pet.name}}</a></li>
             {% endfor %}    
         </div>
+        <a href="{% url 'add_to_cart' 'pet' pet.id %}">Add To Cart</a>
 {% endblock %}
